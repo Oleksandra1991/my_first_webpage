@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body {
+        /* Background pattern from subtlepatterns.com */
+        background-image: url(img/tlo.png);
+        font-family: 'Trirong', serif;
+      }
+
+      .container {
+        width: 800px;
+      }
+
+      #main {
+        margin-top: 250px;
+      }
+
+      h1 {
+        color: #8a7575;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .send {
+        background-color: #8a7575;
+        color: white;
+        border-radius: 3px;
+        padding: 5px 15px;
+        border: #181e25;
+      }
+
+
+
+      .poziom1 {
+        background-color: #ffc0a5;
+        opacity: 0.5;
+      }
+
+      .poziom2 {
+        background-color: #82c0a5;
+      }
+
+      .poziom2obok {
+        background-color: #b3d9ff;
+      }
+
+      .poziom3 {
+        background-color: #ffffb3;
+      }
+
+      .poziom3obok {
+        background-color: #ccb3ff;
+      }
+
+
+
+      footer {
+        background-color: rgba(26, 0, 26, .75);
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 50px;
+        padding: 15px;
+        vertical-align: middle;
+
+
+      }
+
+      .logo {
+
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+
+      .img-rounded {
+        position: fixed;
+        z-index: 100;
+        left: 370px;
+        -webkit-box-shadow: 0px 0px 16px 2px rgba(212,213,230,1);
+        -moz-box-shadow: 0px 0px 16px 2px rgba(212,213,230,1);
+        box-shadow: 0px 0px 16px 2px rgba(212,213,230,1);
+      }
+       #ola {
+         margin-top: 50px;
+       }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <div class="logo">
+      <img src="img/bootstrap-logo.jpg" class="img-rounded img-thumbnail " alt="logo boostrap" width="600px" height="150px" >
+    </div>
+    <div id="main">
+    <h1> Formularz</h1>
+    <form role="form" class="form-horizontal">
+      <div class="form-group has-success has-feedback">
+        <label for="inputEmail" class="control-label col-sm-2">Email</label>
+        <div class="col-sm-10">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Wpisz email">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+      </div>
+      <div class="form-group has-error has-feedback">
+        <label for="inputPassword" class="control-label col-sm-2">Hasło</label>
+        <div class="col-sm-10">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Wpisz hasło">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Zaznacz mnie
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-2">
+          <button type="submit" class="send">Wyślij</button>
+        </div>
+      </div>
+    </form>
+
+    <h1>Listy rozwijane i przewijane</h1>
+
+    <div class="col-sm-offset-1 col-sm-5">
+      <select class="form-control">
+        <option>Wybierz 1</option>
+        <option>Wybierz 2</option>
+        <option>Wybierz 3</option>
+        <option>Wybierz 4</option>
+      </select>
+    </div>
+    <div class="col-sm-offset-1 col-sm-5">
+      <select multiple class="form-control lista">
+        <option>Wybierz 1</option>
+        <option>Wybierz 2</option>
+        <option>Wybierz 3</option>
+        <option>Wybierz 4</option>
+        <option>Wybierz 5</option>
+      </select>
+    </div>
+
+    <h1>Tabela</h1>
+    <div class="table-reponsive">
+    <div class="col-sm-offset-1 col-sm-11">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="active">
+          <th>Nr</th>
+          <th>Imię</th>
+          <th>Nazwisko</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr class="info">
+        <th>1</th>
+        <th>Aleksandra</th>
+        <th>Kurowska</th>
+      </tr>
+      <tr class="warning">
+        <th>2</th>
+        <th>Paweł</th>
+        <th>Kowalski</th>
+      </tr>
+      <tr class="info">
+        <th>3</th>
+        <th>Andrzej</th>
+        <th>Nowak</th>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <h1>Skróty</h1>
+  <address class="text-center">
+    ul. Radziwiłowska 27</br>
+    Kraków</br>
+    <abbr title="Mobile">M:</abbr>737411196
+  </address>
+
+  <h1>Zagnieżdzanie kolumn</h1>
+  <div class="row table">
+    <div class="col-sm-12 poziom1">
+      Poziom1
+      <div class="row">
+        <div class="col-sm-6 poziom2">
+        Poziom2
+          <div class="row">
+            <div class="col-sm-4 poziom3">
+              Poziom3
+            </div>
+            <div class="col-sm-8 poziom3obok">
+              Poziom3
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 poziom2obok">
+        Poziom2
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+  <footer> Aleksandra Kurowska 2016&copy
+  </footer>
+  </body>
+</html>
