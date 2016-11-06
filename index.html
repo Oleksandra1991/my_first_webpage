@@ -35,7 +35,7 @@
       h1 {
         color: #8a7575;
         text-align: center;
-        margin-top: 100px;
+        padding-top: 100px;
       }
 
       .send {
@@ -143,54 +143,59 @@
     </form>
 
     <h1>Listy rozwijane i przewijane</h1>
-
-    <div class="col-sm-offset-1 col-sm-5">
-      <select class="form-control">
-        <option>Wybierz 1</option>
-        <option>Wybierz 2</option>
-        <option>Wybierz 3</option>
-        <option>Wybierz 4</option>
-      </select>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-5">
+        <select class="form-control">
+          <option>Wybierz 1</option>
+          <option>Wybierz 2</option>
+          <option>Wybierz 3</option>
+          <option>Wybierz 4</option>
+        </select>
+      </div>
     </div>
-    <div class="col-sm-offset-1 col-sm-5">
-      <select multiple class="form-control lista">
-        <option>Wybierz 1</option>
-        <option>Wybierz 2</option>
-        <option>Wybierz 3</option>
-        <option>Wybierz 4</option>
-        <option>Wybierz 5</option>
-      </select>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-5">
+        <select multiple class="form-control lista">
+          <option>Wybierz 1</option>
+          <option>Wybierz 2</option>
+          <option>Wybierz 3</option>
+          <option>Wybierz 4</option>
+          <option>Wybierz 5</option>
+        </select>
+      </div>
     </div>
 
     <h1>Tabela</h1>
     <div class="table-reponsive">
-    <div class="col-sm-offset-1 col-sm-11">
-    <table class="table table-bordered">
-      <thead>
-        <tr class="active">
-          <th>Nr</th>
-          <th>Imię</th>
-          <th>Nazwisko</th>
+    <div class="row">
+      <div class="col-sm-offset-1 col-sm-11">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="active">
+            <th>Nr</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr class="info">
+          <th>1</th>
+          <th>Aleksandra</th>
+          <th>Kurowska</th>
         </tr>
-      </thead>
-      <tbody>
-      <tr class="info">
-        <th>1</th>
-        <th>Aleksandra</th>
-        <th>Kurowska</th>
-      </tr>
-      <tr class="warning">
-        <th>2</th>
-        <th>Paweł</th>
-        <th>Kowalski</th>
-      </tr>
-      <tr class="info">
-        <th>3</th>
-        <th>Andrzej</th>
-        <th>Nowak</th>
-      </tr>
-      </tbody>
-    </table>
+        <tr class="warning">
+          <th>2</th>
+          <th>Paweł</th>
+          <th>Kowalski</th>
+        </tr>
+        <tr class="info">
+          <th>3</th>
+          <th>Andrzej</th>
+          <th>Nowak</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   </div>
 
