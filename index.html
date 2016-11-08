@@ -113,38 +113,50 @@
     <h1> Formularz</h1>
     <form role="form" class="form-horizontal">
       <div class="form-group has-success has-feedback">
-        <label for="inputEmail" class="control-label col-sm-2">Email</label>
-        <div class="col-sm-10">
-          <input type="email" id="inputEmail" class="form-control" placeholder="Wpisz email">
-            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        <div class="row">
+          <label for="inputEmail" class="control-label col-xs-2">Email</label>
         </div>
+        <div class="row">
+            <div class=" col-xs-offset-1 col-xs-10">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Wpisz email">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+          </div>
       </div>
       <div class="form-group has-error has-feedback">
-        <label for="inputPassword" class="control-label col-sm-2">Hasło</label>
-        <div class="col-sm-10">
-          <input type="password" id="inputPassword" class="form-control" placeholder="Wpisz hasło">
-            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+        <div class="row">
+          <label for="inputPassword" class="control-label col-xs-2">Hasło</label>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox">Zaznacz mnie
-            </label>
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-10">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Wpisz hasło">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
           </div>
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-2">
-          <button type="submit" class="send">Wyślij</button>
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Zaznacz mnie
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-offset-2 col-xs-2">
+            <button type="submit" class="send">Wyślij</button>
+          </div>
         </div>
       </div>
     </form>
 
     <h1>Listy rozwijane i przewijane</h1>
     <div class="row">
-      <div class="col-sm-offset-1 col-sm-5">
+      <div class="col-xs-offset-1 col-xs-5">
         <select class="form-control">
           <option>Wybierz 1</option>
           <option>Wybierz 2</option>
@@ -154,7 +166,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-offset-1 col-sm-5">
+      <div class="col-xs-offset-1 col-xs-5">
         <select multiple class="form-control lista">
           <option>Wybierz 1</option>
           <option>Wybierz 2</option>
@@ -167,36 +179,36 @@
 
     <h1>Tabela</h1>
     <div class="table-reponsive">
-    <div class="row">
-      <div class="col-sm-offset-1 col-sm-11">
-      <table class="table table-bordered">
-        <thead>
-          <tr class="active">
-            <th>Nr</th>
-            <th>Imię</th>
-            <th>Nazwisko</th>
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-11">
+        <table class="table table-bordered">
+          <thead>
+            <tr class="active">
+              <th>Nr</th>
+              <th>Imię</th>
+              <th>Nazwisko</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr class="info">
+            <th>1</th>
+            <th>Aleksandra</th>
+            <th>Kurowska</th>
           </tr>
-        </thead>
-        <tbody>
-        <tr class="info">
-          <th>1</th>
-          <th>Aleksandra</th>
-          <th>Kurowska</th>
-        </tr>
-        <tr class="warning">
-          <th>2</th>
-          <th>Paweł</th>
-          <th>Kowalski</th>
-        </tr>
-        <tr class="info">
-          <th>3</th>
-          <th>Andrzej</th>
-          <th>Nowak</th>
-        </tr>
-        </tbody>
-      </table>
+          <tr class="warning">
+            <th>2</th>
+            <th>Paweł</th>
+            <th>Kowalski</th>
+          </tr>
+          <tr class="info">
+            <th>3</th>
+            <th>Andrzej</th>
+            <th>Nowak</th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
   </div>
 
   <h1>Skróty</h1>
@@ -208,21 +220,21 @@
 
   <h1>Zagnieżdzanie kolumn</h1>
   <div class="row table">
-    <div class="col-sm-12 poziom1">
+    <div class="col-xs-12 poziom1">
       Poziom1
       <div class="row">
-        <div class="col-sm-6 poziom2">
+        <div class="col-xs-6 poziom2">
         Poziom2
           <div class="row">
-            <div class="col-sm-4 poziom3">
+            <div class="col-xs-4 poziom3">
               Poziom3
             </div>
-            <div class="col-sm-8 poziom3obok">
+            <div class="col-xs-8 poziom3obok">
               Poziom3
             </div>
           </div>
         </div>
-        <div class="col-sm-6 poziom2obok">
+        <div class="col-xs-6 poziom2obok">
         Poziom2
       </div>
       </div>
